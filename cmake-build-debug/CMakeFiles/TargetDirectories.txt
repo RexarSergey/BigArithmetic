@@ -1,0 +1,6 @@
+/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/BigArithmetic.dir
+/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests/CMakeFiles/edit_cache.dir
+/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests/CMakeFiles/rebuild_cache.dir
+/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests/CMakeFiles/BA_Tests.dir

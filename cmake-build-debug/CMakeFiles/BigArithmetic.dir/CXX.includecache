@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sergey/CLionProjects/BigArithmetic/BA.cpp
+BA.h
+/home/sergey/CLionProjects/BigArithmetic/BA.h
+
+/home/sergey/CLionProjects/BigArithmetic/BA.h
+iostream
+-
+string
+-
+vector
+-
+map
+-
+
+/home/sergey/CLionProjects/BigArithmetic/main.cpp
+BA.h
+/home/sergey/CLionProjects/BigArithmetic/BA.h
+
