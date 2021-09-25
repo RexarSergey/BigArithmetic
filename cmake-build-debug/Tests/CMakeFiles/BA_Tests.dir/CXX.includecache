@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/sergey/CLionProjects/BigArithmetic/BA.cpp
+BA.h
+/home/sergey/CLionProjects/BigArithmetic/BA.h
+
 /home/sergey/CLionProjects/BigArithmetic/BA.h
 iostream
 -
@@ -15,10 +19,4 @@ vector
 -
 map
 -
-
-/home/sergey/CLionProjects/BigArithmetic/Tests/BA_Tests.cpp
-gtest/gtest.h
--
-../BA.h
-/home/sergey/CLionProjects/BigArithmetic/BA.h
 

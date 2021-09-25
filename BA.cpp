@@ -96,22 +96,22 @@ const big_int operator+(const big_int &a, const big_int &b) {
         if(b.is_negative)
             return a - (-b);
 
-    std::vector<int> result(b.number.size());
+    std::vector<int> result(a.number);
     int next = 0;
-    for (int i = 0; i < result.size(); ++i) {
-        result[i] = a.number[i] + b.number[i] + next;
+    for (int i = 0; i < b.number.size(); ++i) {
+        result[i] += b.number[i] + next;
         next = result[i] > 9;
         if(next)
             result[i] -= 10;
     }
 
-    int index;
-    while(result.size() < a.number.size()){
-        index = result.size();
-        result.push_back(a.number[index] + next);
-        next = result[index] > 9;
+    for (int i = b.number.size(); i < result.size(); ++i) {
+        result[i] += next;
+        next = result[i] > 9;
         if(next)
-            result[index] -= 10;
+            result[i] -= 10;
+        else
+            break;
     }
 
     if(next)
@@ -133,23 +133,22 @@ const big_int operator-(const big_int &a, const big_int &b) {
         if(b.is_negative)
             return a + (-b);
 
-
-    std::vector<int> result(b.number.size());
+    std::vector<int> result(a.number);
     int next = 0;
-    for (int i = 0; i < result.size(); ++i) {
-        result[i] = a.number[i] - b.number[i] - next;
+    for (int i = 0; i < b.number.size(); ++i) {
+        result[i] -= (b.number[i] + next);
         next = result[i] < 0;
         if(next)
             result[i] += 10;
     }
 
-    int index;
-    while(result.size() < a.number.size()){
-        index = result.size();
-        result.push_back(a.number[index] - next);
-        next = result[index] < 0;
+    for (int i = b.number.size(); i < result.size(); ++i) {
+        result[i] -= next;
+        next = result[i] < 0;
         if(next)
-            result[index] += 10;
+            result[i] += 10;
+        else
+            break;
     }
 
     return big_int(result, false);
