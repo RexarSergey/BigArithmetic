@@ -1,10 +1,20 @@
 #include "BA.h"
 
-big_int::big_int(const std::vector<int> &number, bool sign) : number(number), is_negative(sign) {
+namespace {
+    void sum(big_int a, big_int b){
+        std::cout << (a+b);
+    }
+}
+
+big_int::big_int(const std::vector<int> &number, bool sign) : big_int() {
+
+    this->number = number;
+    this->is_negative = sign;
+
     delete_first_zeros();
 }
 
-big_int::big_int(const std::string &number)
+big_int::big_int(const std::string &number) : big_int()
 {
     if(number.empty() || (number.size() == 1 && number[0] == '-')){
         this->number.push_back(0);
@@ -24,9 +34,14 @@ big_int::big_int(const std::string &number)
     delete_first_zeros();
 }
 
-big_int::big_int(const big_int &number) : number(number.number), is_negative(number.is_negative) {}
+big_int::big_int(const big_int &number) : big_int() {
+    this->number = number.number;
+    this->is_negative = number.is_negative;
+}
 
-big_int::big_int() {}
+big_int::big_int() {
+//   functions_map.emplace("+", *sum);
+}
 
 big_int::~big_int() {}
 
@@ -154,6 +169,24 @@ const big_int operator-(const big_int &a, const big_int &b) {
     return big_int(result, false);
 }
 
+const big_int operator*(const big_int &a, const big_int &b) {
+    std::vector<int> result(a.number.size() + b.number.size() + 1);
+
+    for (int i = 0; i < a.number.size(); ++i) {
+        for (int j = 0; j < b.number.size(); ++j) {
+            result[i + j] += a.number[i] * b.number[j];
+        }
+    }
+
+    for (int i = 0; i < result.size() - 1; ++i) {
+        result[i + 1] += result[i] / 10;
+        result[i] %= 10;
+    }
+
+    bool sign = a.is_negative != b.is_negative;
+    return big_int(result, sign);
+}
+
 
 bool operator>(const big_int &a, const big_int &b) {
     if(a == b)
@@ -214,5 +247,6 @@ bool big_int::is_digit(const std::string &str) {
 
 const std::vector<std::string> big_int::str_bool_op({">", "<", ">=", "<=", "==", "!="});
 
-const std::vector<std::string> big_int::str_int_op({"+", "-"});
+const std::vector<std::string> big_int::str_int_op({"+", "-", "*"});
+
 

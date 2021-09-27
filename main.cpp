@@ -8,7 +8,7 @@ int main() {
     std::cout << "Print first number.\n>> ";
     std::cin >> a;
 
-    std::cout << "Print operation(+, -, >, <, >=, <=, ==, !=).\n>> ";
+    std::cout << "Print operation(+, -, *, >, <, >=, <=, ==, !=).\n>> ";
     std::cin >> operation;
     while(std::find(big_int::str_bool_op.begin(), big_int::str_bool_op.end(), operation) == big_int::str_bool_op.end() &&
             std::find(big_int::str_int_op.begin(), big_int::str_int_op.end(), operation) == big_int::str_int_op.end()){
@@ -24,6 +24,9 @@ int main() {
     else
         if(operation == "-")
             std::cout << (a - b);
+    else
+        if(operation == "*")
+            std::cout << (a * b);
     else
         if(operation == ">")
             std::cout << ((a > b) ? "True" : "False");

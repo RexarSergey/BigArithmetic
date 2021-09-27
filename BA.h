@@ -24,6 +24,7 @@ public:
 
     friend const big_int operator+(const big_int &a, const big_int &b);
     friend const big_int operator-(const big_int &a, const big_int &b);
+    friend const big_int operator*(const big_int &a, const big_int &b);
 
     friend bool operator>(const big_int &a, const big_int &b);
     friend bool operator<(const big_int &a, const big_int &b);
@@ -37,8 +38,7 @@ public:
     static const std::vector<std::string> str_bool_op;
     static const std::vector<std::string> str_int_op;
 
-    static const std::map<std::string, bool (*)(const big_int&, const big_int&)> int_map;
-    static const std::map<std::string, bool (*)(const big_int&, const big_int&)> bool_map;
+//    static std::map<std::string, void (*)(big_int, big_int)> functions_map;
 private:
     std::vector<int> number;
     bool is_negative = false;
