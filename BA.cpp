@@ -1,12 +1,7 @@
 #include "BA.h"
 
-namespace {
-    void sum(big_int a, big_int b){
-        std::cout << (a+b);
-    }
-}
 
-big_int::big_int(const std::vector<int> &number, bool sign) : big_int() {
+big_int::big_int(const std::vector<uint8_t> &number, bool sign) : big_int() {
 
     this->number = number;
     this->is_negative = sign;
@@ -40,7 +35,15 @@ big_int::big_int(const big_int &number) : big_int() {
 }
 
 big_int::big_int() {
-//   functions_map.emplace("+", *sum);
+    functions_map.emplace("+", [](big_int& a, big_int& b){std::cout << (a + b) << std::endl;});
+    functions_map.emplace("-", [](big_int& a, big_int& b){std::cout << (a - b) << std::endl;});
+    functions_map.emplace("*", [](big_int& a, big_int& b){std::cout << (a * b) << std::endl;});
+    functions_map.emplace(">", [](big_int& a, big_int& b){std::cout << (a > b) << std::endl;});
+    functions_map.emplace("<", [](big_int& a, big_int& b){std::cout << (a < b) << std::endl;});
+    functions_map.emplace(">=", [](big_int& a, big_int& b){std::cout << (a >= b) << std::endl;});
+    functions_map.emplace("<=", [](big_int& a, big_int& b){std::cout << (a <= b) << std::endl;});
+    functions_map.emplace("==", [](big_int& a, big_int& b){std::cout << (a == b) << std::endl;});
+    functions_map.emplace("!=", [](big_int& a, big_int& b){std::cout << (a != b) << std::endl;});
 }
 
 big_int::~big_int() {}
@@ -74,7 +77,7 @@ std::istream &operator>>(std::istream &in, big_int &bi) {
 
 void big_int::delete_first_zeros()
 {
-    int index = number.size();
+    long long index = number.size();
     while(number.size() > 1 && number[--index] == 0)
         number.pop_back();
 }
@@ -93,12 +96,12 @@ const big_int &operator+(const big_int &a) {
     return a;
 }
 
-const big_int operator-(const big_int &a) {
+big_int operator-(const big_int &a) {
     return big_int(a.number, !a.is_negative);
 }
 
 
-const big_int operator+(const big_int &a, const big_int &b) {
+big_int operator+(const big_int &a, const big_int &b) {
     if(a < b)
         return b + a;
 
@@ -111,7 +114,7 @@ const big_int operator+(const big_int &a, const big_int &b) {
         if(b.is_negative)
             return a - (-b);
 
-    std::vector<int> result(a.number);
+    std::vector<uint8_t> result(a.number);
     int next = 0;
     for (int i = 0; i < b.number.size(); ++i) {
         result[i] += b.number[i] + next;
@@ -120,7 +123,7 @@ const big_int operator+(const big_int &a, const big_int &b) {
             result[i] -= 10;
     }
 
-    for (int i = b.number.size(); i < result.size(); ++i) {
+    for (long long i = b.number.size(); i < result.size(); ++i) {
         result[i] += next;
         next = result[i] > 9;
         if(next)
@@ -135,7 +138,7 @@ const big_int operator+(const big_int &a, const big_int &b) {
     return big_int(result, false);
 }
 
-const big_int operator-(const big_int &a, const big_int &b) {
+big_int operator-(const big_int &a, const big_int &b) {
     if(a < b)
         return -(b - a);
 
@@ -148,16 +151,16 @@ const big_int operator-(const big_int &a, const big_int &b) {
         if(b.is_negative)
             return a + (-b);
 
-    std::vector<int> result(a.number);
+    std::vector<uint8_t> result(a.number);
     int next = 0;
-    for (int i = 0; i < b.number.size(); ++i) {
+    for (long long i = 0; i < b.number.size(); ++i) {
         result[i] -= (b.number[i] + next);
         next = result[i] < 0;
         if(next)
             result[i] += 10;
     }
 
-    for (int i = b.number.size(); i < result.size(); ++i) {
+    for (long long i = b.number.size(); i < result.size(); ++i) {
         result[i] -= next;
         next = result[i] < 0;
         if(next)
@@ -169,16 +172,16 @@ const big_int operator-(const big_int &a, const big_int &b) {
     return big_int(result, false);
 }
 
-const big_int operator*(const big_int &a, const big_int &b) {
-    std::vector<int> result(a.number.size() + b.number.size() + 1);
+big_int operator*(const big_int &a, const big_int &b) {
+    std::vector<uint8_t> result(a.number.size() + b.number.size() + 1);
 
-    for (int i = 0; i < a.number.size(); ++i) {
-        for (int j = 0; j < b.number.size(); ++j) {
+    for (long long i = 0; i < a.number.size(); ++i) {
+        for (long long j = 0; j < b.number.size(); ++j) {
             result[i + j] += a.number[i] * b.number[j];
         }
     }
 
-    for (int i = 0; i < result.size() - 1; ++i) {
+    for (long long i = 0; i < result.size() - 1; ++i) {
         result[i + 1] += result[i] / 10;
         result[i] %= 10;
     }
@@ -239,14 +242,15 @@ bool operator!=(const big_int &a, const big_int &b) {
     return !(a == b);
 }
 
-bool big_int::is_digit(const std::string &str) {
-    if(str[0] == '-')
-        return str.substr(1, str.size() - 1).find_first_not_of("0123456789") == std::string::npos;
-    return str.find_first_not_of("0123456789") == std::string::npos;
-}
 
 const std::vector<std::string> big_int::str_bool_op({">", "<", ">=", "<=", "==", "!="});
 
 const std::vector<std::string> big_int::str_int_op({"+", "-", "*"});
 
+std::map<std::string, std::function<void(big_int&, big_int&)>> functions_map();
 
+bool big_int::is_digit(const std::string &str) {
+    if(str[0] == '-')
+        return str.substr(1, str.size() - 1).find_first_not_of("0123456789") == std::string::npos;
+    return str.find_first_not_of("0123456789") == std::string::npos;
+}

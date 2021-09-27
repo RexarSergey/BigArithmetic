@@ -19,32 +19,33 @@ int main() {
     std::cout << "Print second number.\n>> ";
     std::cin >> b;
 
-    if(operation == "+")
-            std::cout << (a + b);
-    else
-        if(operation == "-")
-            std::cout << (a - b);
-    else
-        if(operation == "*")
-            std::cout << (a * b);
-    else
-        if(operation == ">")
-            std::cout << ((a > b) ? "True" : "False");
-    else
-        if(operation == "<")
-            std::cout << ((a < b) ? "True" : "False");
-    else
-        if(operation == ">=")
-            std::cout << ((a >= b) ? "True" : "False");
-    else
-        if(operation == "<=")
-            std::cout << ((a <= b) ? "True" : "False");
-    else
-        if(operation == "==")
-            std::cout << ((a == b) ? "True" : "False");
-    else
-        if(operation == "!=")
-            std::cout << ((a != b) ? "True" : "False");
+    big_int::functions_map[operation](a, b);
+//    if(operation == "+")
+//            std::cout << (a + b);
+//    else
+//        if(operation == "-")
+//            std::cout << (a - b);
+//    else
+//        if(operation == "*")
+//            std::cout << (a * b);
+//    else
+//        if(operation == ">")
+//            std::cout << ((a > b) ? "True" : "False");
+//    else
+//        if(operation == "<")
+//            std::cout << ((a < b) ? "True" : "False");
+//    else
+//        if(operation == ">=")
+//            std::cout << ((a >= b) ? "True" : "False");
+//    else
+//        if(operation == "<=")
+//            std::cout << ((a <= b) ? "True" : "False");
+//    else
+//        if(operation == "==")
+//            std::cout << ((a == b) ? "True" : "False");
+//    else
+//        if(operation == "!=")
+//            std::cout << ((a != b) ? "True" : "False");
 
     return 0;
 }

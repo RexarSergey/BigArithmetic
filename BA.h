@@ -5,10 +5,11 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <functional>
 
 class big_int{
 public:
-    big_int(const std::vector<int> &number, bool sign);
+    big_int(const std::vector<uint8_t> &number, bool sign);
     big_int(const std::string &number);
     big_int(const big_int &number);
     big_int();
@@ -20,11 +21,11 @@ public:
     big_int& operator=(const big_int &that);
 
     friend const big_int& operator+(const big_int &a);
-    friend const big_int operator-(const big_int &a);
+    friend big_int operator-(const big_int &a);
 
-    friend const big_int operator+(const big_int &a, const big_int &b);
-    friend const big_int operator-(const big_int &a, const big_int &b);
-    friend const big_int operator*(const big_int &a, const big_int &b);
+    friend big_int operator+(const big_int &a, const big_int &b);
+    friend big_int operator-(const big_int &a, const big_int &b);
+    friend big_int operator*(const big_int &a, const big_int &b);
 
     friend bool operator>(const big_int &a, const big_int &b);
     friend bool operator<(const big_int &a, const big_int &b);
@@ -38,9 +39,10 @@ public:
     static const std::vector<std::string> str_bool_op;
     static const std::vector<std::string> str_int_op;
 
-//    static std::map<std::string, void (*)(big_int, big_int)> functions_map;
+    static std::map<std::string, std::function<void(big_int&, big_int&)>> functions_map;
+
 private:
-    std::vector<int> number;
+    std::vector<uint8_t> number;
     bool is_negative = false;
 
     void delete_first_zeros();
