@@ -1,55 +1,10 @@
 #include "BA.h"
 
 int main() {
-    big_int a("123");
-    -a;
-//    b = -a;
+    big_int a("-1234567891011");
+    big_int b("-123456789");
 
-
-//    std::string operation;
-//    big_int a;
-//    big_int b;
-//
-//    std::cout << "Print first number_.\n>> ";
-//    std::cin >> a;
-//
-//    std::cout << "Print operation(+, -, *, >, <, >=, <=, ==, !=).\n>> ";
-//    std::cin >> operation;
-//
-//
-//    std::cout << "Print second number_.\n>> ";
-//    std::cin >> b;
-
-//    big_int::functions_map[operation](a, b);
-    /*if(operation == "+")
-            std::cout << (a + b);
-    else
-        if(operation == "-")
-            std::cout << (a - b);
-    else
-        if(operation == "*")
-            std::cout << (a * b);
-    else
-        if(operation == "/")
-            std::cout << (a / b);
-    else
-        if(operation == ">")
-            std::cout << ((a > b) ? "True" : "False");
-    else
-        if(operation == "<")
-            std::cout << ((a < b) ? "True" : "False");
-    else
-        if(operation == ">=")
-            std::cout << ((a >= b) ? "True" : "False");
-    else
-        if(operation == "<=")
-            std::cout << ((a <= b) ? "True" : "False");
-    else
-        if(operation == "==")
-            std::cout << ((a == b) ? "True" : "False");
-    else
-        if(operation == "!=")
-            std::cout << ((a != b) ? "True" : "False");*/
+    std::cout << ((a+b) == big_int("-1234691347800"));
 
     return 0;
 }

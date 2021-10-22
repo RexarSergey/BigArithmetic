@@ -100,3 +100,37 @@ bool big_int::operator!=(const big_int &that) {
     return !(*this == that);
 }
 
+
+big_int big_int::operator+(const big_int &that) {
+    big_int result;
+
+    if(is_negative_)
+        if(that.is_negative_)
+            result.is_negative_ = true;
+        else
+            return big_int()/* that - (-(*this)) */;
+    else
+    if(that.is_negative_)
+        return big_int()/* *this - (-that) */;
+    else
+        result.is_negative_ = false;
+
+
+    result.number_ = number_.size() > that.number_.size() ? number_ : that.number_;
+    std::vector<uint8_t> min_v = number_ != result.number_ ? number_ : that.number_;
+
+
+    int next = 0;
+    for (int i = 0; i < min_v.size(); ++i) {
+        result.number_[i] += min_v[i] + next;
+        next = result.number_[i] > 9;
+        if(next)
+            result.number_[i] -= 10;
+    }
+
+    if(next)
+        result.number_.emplace_back(1);
+
+    return result;
+}
+
