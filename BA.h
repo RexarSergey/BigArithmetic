@@ -12,8 +12,20 @@ public:
     big_int();
     ~big_int();
 
-    const std::vector<uint8_t> &getNumber() const;
-    bool isNegative() const;
+    big_int& operator=(const big_int &that);
+
+    big_int operator+() const;
+    big_int operator-() const;
+
+
+    bool operator>(const big_int &that);
+    bool operator<(const big_int &that);
+
+    bool operator>=(const big_int &that);
+    bool operator<=(const big_int &that);
+
+    bool operator==(const big_int &that);
+    bool operator!=(const big_int &that);
 
 private:
     std::vector<uint8_t> number_;

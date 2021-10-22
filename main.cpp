@@ -1,7 +1,9 @@
-#include "BAFunctions.h"
+#include "BA.h"
 
 int main() {
-    big_int a;
+    big_int a("123");
+    -a;
+//    b = -a;
 
 
 //    std::string operation;

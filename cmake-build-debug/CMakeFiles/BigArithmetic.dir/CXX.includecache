@@ -6,17 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/home/sergey/CLionProjects/BigArithmetic/BA.cpp
+BA.h
+/home/sergey/CLionProjects/BigArithmetic/BA.h
+
 /home/sergey/CLionProjects/BigArithmetic/BA.h
 iostream
 -
 vector
 -
-
-/home/sergey/CLionProjects/BigArithmetic/BAFunctions.h
-BA.h
-/home/sergey/CLionProjects/BigArithmetic/BA.h
-
-/home/sergey/CLionProjects/BigArithmetic/main.cpp
-BAFunctions.h
-/home/sergey/CLionProjects/BigArithmetic/BAFunctions.h
 

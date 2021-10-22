@@ -64,32 +64,15 @@ CMAKE_BINARY_DIR = /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/BigArithmetic.dir/all
-all: Tests/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: Tests/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/BigArithmetic.dir/clean
-clean: Tests/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory Tests
-
-# Recursive "all" directory target.
-Tests/all: Tests/CMakeFiles/BA_Tests.dir/all
-.PHONY : Tests/all
-
-# Recursive "preinstall" directory target.
-Tests/preinstall:
-.PHONY : Tests/preinstall
-
-# Recursive "clean" directory target.
-Tests/clean: Tests/CMakeFiles/BA_Tests.dir/clean
-.PHONY : Tests/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/BigArithmetic.dir
@@ -98,7 +81,7 @@ Tests/clean: Tests/CMakeFiles/BA_Tests.dir/clean
 CMakeFiles/BigArithmetic.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BigArithmetic.dir/build.make CMakeFiles/BigArithmetic.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BigArithmetic.dir/build.make CMakeFiles/BigArithmetic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles --progress-num=4,5,6 "Built target BigArithmetic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target BigArithmetic"
 .PHONY : CMakeFiles/BigArithmetic.dir/all
 
 # Build rule for subdir invocation for target.
@@ -116,32 +99,6 @@ BigArithmetic: CMakeFiles/BigArithmetic.dir/rule
 CMakeFiles/BigArithmetic.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BigArithmetic.dir/build.make CMakeFiles/BigArithmetic.dir/clean
 .PHONY : CMakeFiles/BigArithmetic.dir/clean
-
-#=============================================================================
-# Target rules for target Tests/CMakeFiles/BA_Tests.dir
-
-# All Build rule for target.
-Tests/CMakeFiles/BA_Tests.dir/all:
-	$(MAKE) $(MAKESILENT) -f Tests/CMakeFiles/BA_Tests.dir/build.make Tests/CMakeFiles/BA_Tests.dir/depend
-	$(MAKE) $(MAKESILENT) -f Tests/CMakeFiles/BA_Tests.dir/build.make Tests/CMakeFiles/BA_Tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target BA_Tests"
-.PHONY : Tests/CMakeFiles/BA_Tests.dir/all
-
-# Build rule for subdir invocation for target.
-Tests/CMakeFiles/BA_Tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tests/CMakeFiles/BA_Tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles 0
-.PHONY : Tests/CMakeFiles/BA_Tests.dir/rule
-
-# Convenience name for target.
-BA_Tests: Tests/CMakeFiles/BA_Tests.dir/rule
-.PHONY : BA_Tests
-
-# clean rule for target.
-Tests/CMakeFiles/BA_Tests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Tests/CMakeFiles/BA_Tests.dir/build.make Tests/CMakeFiles/BA_Tests.dir/clean
-.PHONY : Tests/CMakeFiles/BA_Tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

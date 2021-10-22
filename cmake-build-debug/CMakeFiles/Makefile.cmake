@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "../Tests/CMakeLists.txt"
   "CMakeFiles/3.20.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeSystem.cmake"
@@ -22,20 +21,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake"
   "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CheckCSourceCompiles.cmake"
-  "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CheckIncludeFile.cmake"
-  "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CheckLibraryExists.cmake"
   "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/Compiler/Clang-CXX.cmake"
   "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/Compiler/Clang.cmake"
   "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/Compiler/GNU-C.cmake"
   "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/Compiler/GNU.cmake"
-  "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/FindGTest.cmake"
-  "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake"
-  "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/FindPackageMessage.cmake"
-  "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/FindThreads.cmake"
-  "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/GoogleTest.cmake"
-  "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/Internal/CheckSourceCompiles.cmake"
   "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/Platform/Linux-Clang-CXX.cmake"
   "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/Platform/Linux-GNU-C.cmake"
   "/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/Platform/Linux-GNU-CXX.cmake"
@@ -54,11 +44,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/BigArithmetic.dir/DependInfo.cmake"
-  "Tests/CMakeFiles/BA_Tests.dir/DependInfo.cmake"
   )

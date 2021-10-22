@@ -2,7 +2,7 @@
 
 
 big_int::big_int(const std::string_view &number) {
-    if(!big_int::is_digit(number))
+    if (!big_int::is_digit(number))
         throw std::invalid_argument("It's not a number.");
 
     int end = 0;
@@ -39,12 +39,64 @@ bool big_int::is_digit(const std::string_view &str) {
     return str.find_first_not_of("0123456789") == std::string_view::npos;
 }
 
-const std::vector<uint8_t> &big_int::getNumber() const {
-    return number_;
+
+big_int &big_int::operator=(const big_int &that) = default;
+
+
+big_int big_int::operator+() const {
+    return *this;
 }
 
-bool big_int::isNegative() const {
-    return is_negative_;
+big_int big_int::operator-() const {
+    big_int bigInt = *this;
+    bigInt.is_negative_ = !is_negative_;
+    return bigInt;
 }
 
+
+bool big_int::operator>(const big_int &that) {
+    if(*this == that)
+        return false;
+
+    if(is_negative_)
+        if(!that.is_negative_)
+            return false;
+        else
+            return !((-(*this)) > (-that));
+    else
+        if(that.is_negative_)
+            return true;
+
+    int i = 0;
+    while(number_[i] == that.number_[i])
+        ++i;
+    return number_[i] > that.number_[i];
+}
+
+bool big_int::operator<(const big_int &that) {
+    if(*this == that)
+        return false;
+    return !(*this > that);
+}
+
+
+bool big_int::operator>=(const big_int &that) {
+
+    return (*this == that) || (*this > that);
+}
+
+bool big_int::operator<=(const big_int &that) {
+
+    return (*this == that) || (*this < that);
+}
+
+
+bool big_int::operator==(const big_int &that) {
+    return is_negative_ == that.is_negative_ &&
+            number_ == that.number_;
+}
+
+bool big_int::operator!=(const big_int &that) {
+    return !(*this == that);
+}
 

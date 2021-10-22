@@ -129,19 +129,6 @@ BigArithmetic/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BigArithmetic.dir/build.make CMakeFiles/BigArithmetic.dir/build
 .PHONY : BigArithmetic/fast
 
-#=============================================================================
-# Target rules for targets named BA_Tests
-
-# Build rule for target.
-BA_Tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BA_Tests
-.PHONY : BA_Tests
-
-# fast build rule for target.
-BA_Tests/fast:
-	$(MAKE) $(MAKESILENT) -f Tests/CMakeFiles/BA_Tests.dir/build.make Tests/CMakeFiles/BA_Tests.dir/build
-.PHONY : BA_Tests/fast
-
 BA.o: BA.cpp.o
 .PHONY : BA.o
 
@@ -198,7 +185,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... BA_Tests"
 	@echo "... BigArithmetic"
 	@echo "... BA.o"
 	@echo "... BA.i"
