@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/BigArithmetic.dir/main.cpp.o CMakeFiles/BigArithmetic.dir/BA.cpp.o -o BigArithmetic 
+/bin/clang++-12 -g CMakeFiles/BigArithmetic.dir/main.cpp.o CMakeFiles/BigArithmetic.dir/BA.cpp.o -o BigArithmetic 

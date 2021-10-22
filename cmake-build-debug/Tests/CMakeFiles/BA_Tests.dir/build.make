@@ -69,28 +69,28 @@ include Tests/CMakeFiles/BA_Tests.dir/flags.make
 Tests/CMakeFiles/BA_Tests.dir/BA_Tests.cpp.o: Tests/CMakeFiles/BA_Tests.dir/flags.make
 Tests/CMakeFiles/BA_Tests.dir/BA_Tests.cpp.o: ../Tests/BA_Tests.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Tests/CMakeFiles/BA_Tests.dir/BA_Tests.cpp.o"
-	cd /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BA_Tests.dir/BA_Tests.cpp.o -c /home/sergey/CLionProjects/BigArithmetic/Tests/BA_Tests.cpp
+	cd /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests && /bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BA_Tests.dir/BA_Tests.cpp.o -c /home/sergey/CLionProjects/BigArithmetic/Tests/BA_Tests.cpp
 
 Tests/CMakeFiles/BA_Tests.dir/BA_Tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BA_Tests.dir/BA_Tests.cpp.i"
-	cd /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/CLionProjects/BigArithmetic/Tests/BA_Tests.cpp > CMakeFiles/BA_Tests.dir/BA_Tests.cpp.i
+	cd /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests && /bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/CLionProjects/BigArithmetic/Tests/BA_Tests.cpp > CMakeFiles/BA_Tests.dir/BA_Tests.cpp.i
 
 Tests/CMakeFiles/BA_Tests.dir/BA_Tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BA_Tests.dir/BA_Tests.cpp.s"
-	cd /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/CLionProjects/BigArithmetic/Tests/BA_Tests.cpp -o CMakeFiles/BA_Tests.dir/BA_Tests.cpp.s
+	cd /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests && /bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/CLionProjects/BigArithmetic/Tests/BA_Tests.cpp -o CMakeFiles/BA_Tests.dir/BA_Tests.cpp.s
 
 Tests/CMakeFiles/BA_Tests.dir/__/BA.cpp.o: Tests/CMakeFiles/BA_Tests.dir/flags.make
 Tests/CMakeFiles/BA_Tests.dir/__/BA.cpp.o: ../BA.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Tests/CMakeFiles/BA_Tests.dir/__/BA.cpp.o"
-	cd /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BA_Tests.dir/__/BA.cpp.o -c /home/sergey/CLionProjects/BigArithmetic/BA.cpp
+	cd /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests && /bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BA_Tests.dir/__/BA.cpp.o -c /home/sergey/CLionProjects/BigArithmetic/BA.cpp
 
 Tests/CMakeFiles/BA_Tests.dir/__/BA.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BA_Tests.dir/__/BA.cpp.i"
-	cd /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/CLionProjects/BigArithmetic/BA.cpp > CMakeFiles/BA_Tests.dir/__/BA.cpp.i
+	cd /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests && /bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sergey/CLionProjects/BigArithmetic/BA.cpp > CMakeFiles/BA_Tests.dir/__/BA.cpp.i
 
 Tests/CMakeFiles/BA_Tests.dir/__/BA.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BA_Tests.dir/__/BA.cpp.s"
-	cd /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/CLionProjects/BigArithmetic/BA.cpp -o CMakeFiles/BA_Tests.dir/__/BA.cpp.s
+	cd /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests && /bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sergey/CLionProjects/BigArithmetic/BA.cpp -o CMakeFiles/BA_Tests.dir/__/BA.cpp.s
 
 # Object files for target BA_Tests
 BA_Tests_OBJECTS = \

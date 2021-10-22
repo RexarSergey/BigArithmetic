@@ -1,4 +1,4 @@
-/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/sergey/CLionProjects/BigArithmetic
+/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/bin/clang++-12 -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/sergey/CLionProjects/BigArithmetic
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug

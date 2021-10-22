@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_6d6ee/fast && /usr/bin/make  -f CMakeFiles/cmTC_6d6ee.dir/build.make CMakeFiles/cmTC_6d6ee.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_720fb/fast && /usr/bin/make  -f CMakeFiles/cmTC_720fb.dir/build.make CMakeFiles/cmTC_720fb.dir/build
 make[1]: вход в каталог «/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_6d6ee.dir/src.c.o
-/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_6d6ee.dir/src.c.o -c /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_6d6ee
-/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d6ee.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_6d6ee.dir/src.c.o -o cmTC_6d6ee 
-/usr/bin/ld: CMakeFiles/cmTC_6d6ee.dir/src.c.o: в функции «main»:
+Building C object CMakeFiles/cmTC_720fb.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_720fb.dir/src.c.o -c /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_720fb
+/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_720fb.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_720fb.dir/src.c.o -o cmTC_720fb 
+/usr/bin/ld: CMakeFiles/cmTC_720fb.dir/src.c.o: в функции «main»:
 src.c:(.text+0x46): неопределённая ссылка на «pthread_create»
 /usr/bin/ld: src.c:(.text+0x52): неопределённая ссылка на «pthread_detach»
 /usr/bin/ld: src.c:(.text+0x5e): неопределённая ссылка на «pthread_cancel»
 /usr/bin/ld: src.c:(.text+0x6f): неопределённая ссылка на «pthread_join»
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_6d6ee.dir/build.make:99: cmTC_6d6ee] Ошибка 1
+make[1]: *** [CMakeFiles/cmTC_720fb.dir/build.make:99: cmTC_720fb] Ошибка 1
 make[1]: выход из каталога «/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp»
-make: *** [Makefile:127: cmTC_6d6ee/fast] Ошибка 2
+make: *** [Makefile:127: cmTC_720fb/fast] Ошибка 2
 
 
 Source file was:
@@ -43,18 +43,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_7a9a2/fast && /usr/bin/make  -f CMakeFiles/cmTC_7a9a2.dir/build.make CMakeFiles/cmTC_7a9a2.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f129a/fast && /usr/bin/make  -f CMakeFiles/cmTC_f129a.dir/build.make CMakeFiles/cmTC_f129a.dir/build
 make[1]: вход в каталог «/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_7a9a2.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_7a9a2.dir/CheckFunctionExists.c.o -c /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CheckFunctionExists.c
-Linking C executable cmTC_7a9a2
-/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a9a2.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_7a9a2.dir/CheckFunctionExists.c.o -o cmTC_7a9a2  -lpthreads 
+Building C object CMakeFiles/cmTC_f129a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_f129a.dir/CheckFunctionExists.c.o -c /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f129a
+/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f129a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_f129a.dir/CheckFunctionExists.c.o -o cmTC_f129a  -lpthreads 
 /usr/bin/ld: невозможно найти -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_7a9a2.dir/build.make:99: cmTC_7a9a2] Ошибка 1
+make[1]: *** [CMakeFiles/cmTC_f129a.dir/build.make:99: cmTC_f129a] Ошибка 1
 make[1]: выход из каталога «/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp»
-make: *** [Makefile:127: cmTC_7a9a2/fast] Ошибка 2
+make: *** [Makefile:127: cmTC_f129a/fast] Ошибка 2
 
 
 

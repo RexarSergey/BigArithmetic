@@ -4,7 +4,7 @@
 	<Project>
 		<Option title="BigArithmetic"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="clang"/>
 		<Option virtualFolders="CMake Files\;CMake Files\Tests\;"/>
 		<Build>
 			<Target title="all">
@@ -42,15 +42,16 @@
 				<Option working_dir="/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10"/>
+					<Add directory="/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/llvm-12/lib/clang/12.0.0/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Makefile&quot;  VERBOSE=1 BigArithmetic"/>
@@ -64,15 +65,16 @@
 				<Option working_dir="/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10"/>
+					<Add directory="/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/llvm-12/lib/clang/12.0.0/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Makefile&quot;  VERBOSE=1 BigArithmetic/fast"/>
@@ -86,15 +88,16 @@
 				<Option working_dir="/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10"/>
+					<Add directory="/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/llvm-12/lib/clang/12.0.0/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests/Makefile&quot;  VERBOSE=1 BA_Tests"/>
@@ -108,15 +111,16 @@
 				<Option working_dir="/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10"/>
+					<Add directory="/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/llvm-12/lib/clang/12.0.0/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/Tests/Makefile&quot;  VERBOSE=1 BA_Tests/fast"/>
@@ -133,6 +137,9 @@
 		<Unit filename="/home/sergey/CLionProjects/BigArithmetic/BA.h">
 			<Option target="BigArithmetic"/>
 			<Option target="BA_Tests"/>
+		</Unit>
+		<Unit filename="/home/sergey/CLionProjects/BigArithmetic/BAFunctions.h">
+			<Option target="BigArithmetic"/>
 		</Unit>
 		<Unit filename="/home/sergey/CLionProjects/BigArithmetic/Tests/BA_Tests.cpp">
 			<Option target="BA_Tests"/>

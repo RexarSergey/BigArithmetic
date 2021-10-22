@@ -11,7 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sergey/CLionProjects/BigArithmetic/BA.cpp" "/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/BigArithmetic.dir/BA.cpp.o"
   "/home/sergey/CLionProjects/BigArithmetic/main.cpp" "/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/BigArithmetic.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

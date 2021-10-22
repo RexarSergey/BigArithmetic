@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/BA_Tests.dir/BA_Tests.cpp.o CMakeFiles/BA_Tests.dir/__/BA.cpp.o -o BA_Tests  /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a -lpthread 
+/bin/clang++-12 -g CMakeFiles/BA_Tests.dir/BA_Tests.cpp.o CMakeFiles/BA_Tests.dir/__/BA.cpp.o -o BA_Tests  /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a -lpthread 

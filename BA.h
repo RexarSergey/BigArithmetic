@@ -2,51 +2,25 @@
 #define BIGARITHMETIC_BA_H
 
 #include <iostream>
-#include <string>
 #include <vector>
-#include <map>
-#include <functional>
 
 class big_int{
 public:
-    big_int(const std::vector<uint8_t> &number, bool sign);
-    big_int(const std::string &number);
+    explicit big_int(const std::string_view &number);
     big_int(const big_int &number);
+    big_int(big_int &&number) noexcept ;
     big_int();
     ~big_int();
 
-    friend std::ostream& operator<<(std::ostream &out, const big_int &bi);
-    friend std::istream & operator>>(std::istream &in, big_int &bi);
-
-    big_int& operator=(const big_int &that);
-
-    friend const big_int& operator+(const big_int &a);
-    friend big_int operator-(const big_int &a);
-
-    friend big_int operator+(const big_int &a, const big_int &b);
-    friend big_int operator-(const big_int &a, const big_int &b);
-    friend big_int operator*(const big_int &a, const big_int &b);
-
-    friend bool operator>(const big_int &a, const big_int &b);
-    friend bool operator<(const big_int &a, const big_int &b);
-
-    friend bool operator>=(const big_int &a, const big_int &b);
-    friend bool operator<=(const big_int &a, const big_int &b);
-
-    friend bool operator==(const big_int &a, const big_int &b);
-    friend bool operator!=(const big_int &a, const big_int &b);
-
-    static const std::vector<std::string> str_bool_op;
-    static const std::vector<std::string> str_int_op;
-
-    static std::map<std::string, std::function<void(big_int&, big_int&)>> functions_map;
+    const std::vector<uint8_t> &getNumber() const;
+    bool isNegative() const;
 
 private:
-    std::vector<uint8_t> number;
-    bool is_negative = false;
+    std::vector<uint8_t> number_;
+    bool is_negative_ = false;
 
     void delete_first_zeros();
-    static bool is_digit(const std::string &str);
+    bool is_digit(const std::string_view &str);
 };
 
 

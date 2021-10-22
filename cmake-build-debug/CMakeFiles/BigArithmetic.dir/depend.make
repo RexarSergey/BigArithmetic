@@ -6,4 +6,5 @@ CMakeFiles/BigArithmetic.dir/BA.cpp.o: \
  ../BA.h
 CMakeFiles/BigArithmetic.dir/main.cpp.o: \
  ../BA.h \
+ ../BAFunctions.h \
  ../main.cpp
