@@ -1,10 +1,12 @@
 #include "BA.h"
 
 int main() {
-    big_int a("-1234567891011");
-    big_int b("-123456789");
+    big_int a("1000");
+    big_int b("1");
 
-    std::cout << ((a+b) == big_int("-1234691347800"));
+    big_int c = a-b;
+
+    std::cout << ((a-b) == big_int("999"));
 
     return 0;
 }

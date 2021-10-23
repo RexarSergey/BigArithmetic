@@ -54,6 +54,14 @@ big_int big_int::operator-() const {
 }
 
 
+big_int big_int::abs() const {
+    big_int result(*this);
+    result.is_negative_ = false;
+
+    return result;
+}
+
+
 bool big_int::operator>(const big_int &that) {
     if(*this == that)
         return false;
@@ -62,15 +70,19 @@ bool big_int::operator>(const big_int &that) {
         if(!that.is_negative_)
             return false;
         else
-            return !((-(*this)) > (-that));
+            return !(this->abs() > that.abs());
     else
         if(that.is_negative_)
             return true;
 
-    int i = 0;
-    while(number_[i] == that.number_[i])
-        ++i;
-    return number_[i] > that.number_[i];
+    if(this->number_.size() != that.number_.size())
+        return this->number_.size() > that.number_.size();
+    else{
+        int i = that.number_.size() - 1;
+        while(this->number_[i] == that.number_[i])
+            --i;
+        return this->number_[i] > that.number_[i];
+    }
 }
 
 bool big_int::operator<(const big_int &that) {
@@ -108,29 +120,74 @@ big_int big_int::operator+(const big_int &that) {
         if(that.is_negative_)
             result.is_negative_ = true;
         else
-            return big_int()/* that - (-(*this)) */;
+            return -(this->abs() - that);
     else
     if(that.is_negative_)
-        return big_int()/* *this - (-that) */;
+        return (*this - that.abs());
     else
         result.is_negative_ = false;
 
 
-    result.number_ = number_.size() > that.number_.size() ? number_ : that.number_;
-    std::vector<uint8_t> min_v = number_ != result.number_ ? number_ : that.number_;
+    result.number_ = this->abs() >= that.abs() ? number_ : that.number_;
+    std::vector<int8_t> min_v = that.abs() <= this->abs() ? that.number_ : number_;
+
+    size_t min_size = std::min(number_.size(), that.number_.size());
+    size_t max_size = std::max(number_.size(), that.number_.size());
+
+    result.number_.emplace_back(0);
+    for(size_t i = min_size; i <= max_size; ++i)
+        min_v.emplace_back(0);
 
 
-    int next = 0;
-    for (int i = 0; i < min_v.size(); ++i) {
+    uint8_t next = 0;
+    for (size_t i = 0; i <= max_size; ++i) {
         result.number_[i] += min_v[i] + next;
         next = result.number_[i] > 9;
         if(next)
             result.number_[i] -= 10;
     }
 
-    if(next)
-        result.number_.emplace_back(1);
+    result.delete_first_zeros();
 
     return result;
 }
+
+big_int big_int::operator-(const big_int &that) {
+    big_int result;
+
+    if(is_negative_)
+        if(that.is_negative_)
+            result.is_negative_ = this->abs() > that.abs();
+        else
+            return -(this->abs() + that.abs());
+    else
+        if(that.is_negative_)
+            return (*this + that.abs());
+        else
+            result.is_negative_ = *this < that;
+
+
+    result.number_ = this->abs() >= that.abs() ? number_ : that.number_;
+    std::vector<int8_t> min_v = that.abs() <= this->abs() ? that.number_ : number_;
+
+    size_t min_size = std::min(number_.size(), that.number_.size());
+    size_t max_size = std::max(number_.size(), that.number_.size());
+
+    for(size_t i = min_size; i < max_size; ++i)
+        min_v.emplace_back(0);
+
+
+    int next = 0;
+    for (size_t i = 0; i < max_size; ++i) {
+        result.number_[i] -= (min_v[i] + next);
+        next = result.number_[i] < 0;
+        if(next)
+            result.number_[i] += 10;
+    }
+
+    result.delete_first_zeros();
+
+    return result;
+}
+
 

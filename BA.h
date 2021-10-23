@@ -17,6 +17,8 @@ public:
     big_int operator+() const;
     big_int operator-() const;
 
+    big_int abs() const;
+
     bool operator>(const big_int &that);
     bool operator<(const big_int &that);
 
@@ -28,9 +30,10 @@ public:
 
 
     big_int operator+(const big_int &that);
+    big_int operator-(const big_int &that);
 
 private:
-    std::vector<uint8_t> number_;
+    std::vector<int8_t> number_;
     bool is_negative_ = false;
 
     void delete_first_zeros();
