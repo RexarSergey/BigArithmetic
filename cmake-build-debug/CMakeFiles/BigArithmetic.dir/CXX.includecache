@@ -17,6 +17,14 @@ vector
 -
 
 /home/sergey/CLionProjects/BigArithmetic/main.cpp
+iostream
+-
+functional
+-
+any
+-
+map
+-
 BA.h
 /home/sergey/CLionProjects/BigArithmetic/BA.h
 

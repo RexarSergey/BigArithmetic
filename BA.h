@@ -32,6 +32,9 @@ public:
     big_int operator+(const big_int &that);
     big_int operator-(const big_int &that);
 
+
+    std::string toString();
+
 private:
     std::vector<int8_t> number_;
     bool is_negative_ = false;

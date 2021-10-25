@@ -63,30 +63,29 @@ big_int big_int::abs() const {
 
 
 bool big_int::operator>(const big_int &that) {
-    if(*this == that)
+    if (*this == that)
         return false;
 
-    if(is_negative_)
-        if(!that.is_negative_)
+    if (is_negative_)
+        if (!that.is_negative_)
             return false;
         else
             return !(this->abs() > that.abs());
-    else
-        if(that.is_negative_)
-            return true;
+    else if (that.is_negative_)
+        return true;
 
-    if(this->number_.size() != that.number_.size())
+    if (this->number_.size() != that.number_.size())
         return this->number_.size() > that.number_.size();
-    else{
+    else {
         int i = that.number_.size() - 1;
-        while(this->number_[i] == that.number_[i])
+        while (this->number_[i] == that.number_[i])
             --i;
         return this->number_[i] > that.number_[i];
     }
 }
 
 bool big_int::operator<(const big_int &that) {
-    if(*this == that)
+    if (*this == that)
         return false;
     return !(*this > that);
 }
@@ -105,7 +104,7 @@ bool big_int::operator<=(const big_int &that) {
 
 bool big_int::operator==(const big_int &that) {
     return is_negative_ == that.is_negative_ &&
-            number_ == that.number_;
+           number_ == that.number_;
 }
 
 bool big_int::operator!=(const big_int &that) {
@@ -116,13 +115,12 @@ bool big_int::operator!=(const big_int &that) {
 big_int big_int::operator+(const big_int &that) {
     big_int result;
 
-    if(is_negative_)
-        if(that.is_negative_)
+    if (is_negative_)
+        if (that.is_negative_)
             result.is_negative_ = true;
         else
             return -(this->abs() - that);
-    else
-    if(that.is_negative_)
+    else if (that.is_negative_)
         return (*this - that.abs());
     else
         result.is_negative_ = false;
@@ -135,7 +133,7 @@ big_int big_int::operator+(const big_int &that) {
     size_t max_size = std::max(number_.size(), that.number_.size());
 
     result.number_.emplace_back(0);
-    for(size_t i = min_size; i <= max_size; ++i)
+    for (size_t i = min_size; i <= max_size; ++i)
         min_v.emplace_back(0);
 
 
@@ -143,7 +141,7 @@ big_int big_int::operator+(const big_int &that) {
     for (size_t i = 0; i <= max_size; ++i) {
         result.number_[i] += min_v[i] + next;
         next = result.number_[i] > 9;
-        if(next)
+        if (next)
             result.number_[i] -= 10;
     }
 
@@ -155,16 +153,15 @@ big_int big_int::operator+(const big_int &that) {
 big_int big_int::operator-(const big_int &that) {
     big_int result;
 
-    if(is_negative_)
-        if(that.is_negative_)
+    if (is_negative_)
+        if (that.is_negative_)
             result.is_negative_ = this->abs() > that.abs();
         else
             return -(this->abs() + that.abs());
+    else if (that.is_negative_)
+        return (*this + that.abs());
     else
-        if(that.is_negative_)
-            return (*this + that.abs());
-        else
-            result.is_negative_ = *this < that;
+        result.is_negative_ = *this < that;
 
 
     result.number_ = this->abs() >= that.abs() ? number_ : that.number_;
@@ -173,7 +170,7 @@ big_int big_int::operator-(const big_int &that) {
     size_t min_size = std::min(number_.size(), that.number_.size());
     size_t max_size = std::max(number_.size(), that.number_.size());
 
-    for(size_t i = min_size; i < max_size; ++i)
+    for (size_t i = min_size; i < max_size; ++i)
         min_v.emplace_back(0);
 
 
@@ -181,13 +178,23 @@ big_int big_int::operator-(const big_int &that) {
     for (size_t i = 0; i < max_size; ++i) {
         result.number_[i] -= (min_v[i] + next);
         next = result.number_[i] < 0;
-        if(next)
+        if (next)
             result.number_[i] += 10;
     }
 
     result.delete_first_zeros();
 
     return result;
+}
+
+std::string big_int::toString() {
+    std::string str = "";
+    for (const int8_t &elem: number_)
+        str = std::to_string(elem) + str;
+    if (is_negative_)
+        str = '-' + str;
+
+    return str;
 }
 
 

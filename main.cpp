@@ -1,12 +1,33 @@
+#include <iostream>
+#include <functional>
+#include <map>
 #include "BA.h"
 
+typedef void (*void_func)();
+
+void sum(big_int& a, big_int& b){
+    std::cout << (a+b).toString();
+}
+void dif(big_int& a, big_int& b){
+    std::cout <<  (a-b).toString();
+}
+
 int main() {
-    big_int a("1000");
-    big_int b("1");
+    std::map<std::string, void_func> map;
+    map["+"] = (void_func) &sum;
+    map["-"] = (void_func) &dif;
 
-    big_int c = a-b;
 
-    std::cout << ((a-b) == big_int("999"));
+    std::string a_str, operation, b_str;
+    std::cin >> a_str;
+    big_int a(a_str);
+
+    std::cin >> operation;
+
+    std::cin >> b_str;
+    big_int b(b_str);
+
+    ((void(*)(big_int, big_int)) map[operation])(a, b);
 
     return 0;
 }
