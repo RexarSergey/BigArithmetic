@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sergey/CLionProjects/BigArithmetic/BA.cpp" "/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/BigArithmetic.dir/BA.cpp.o"
   "/home/sergey/CLionProjects/BigArithmetic/main.cpp" "/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/BigArithmetic.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")

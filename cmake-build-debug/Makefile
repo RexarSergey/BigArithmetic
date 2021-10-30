@@ -129,30 +129,6 @@ BigArithmetic/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BigArithmetic.dir/build.make CMakeFiles/BigArithmetic.dir/build
 .PHONY : BigArithmetic/fast
 
-BA.o: BA.cpp.o
-.PHONY : BA.o
-
-# target to build an object file
-BA.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BigArithmetic.dir/build.make CMakeFiles/BigArithmetic.dir/BA.cpp.o
-.PHONY : BA.cpp.o
-
-BA.i: BA.cpp.i
-.PHONY : BA.i
-
-# target to preprocess a source file
-BA.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BigArithmetic.dir/build.make CMakeFiles/BigArithmetic.dir/BA.cpp.i
-.PHONY : BA.cpp.i
-
-BA.s: BA.cpp.s
-.PHONY : BA.s
-
-# target to generate assembly for a file
-BA.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BigArithmetic.dir/build.make CMakeFiles/BigArithmetic.dir/BA.cpp.s
-.PHONY : BA.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -186,9 +162,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BigArithmetic"
-	@echo "... BA.o"
-	@echo "... BA.i"
-	@echo "... BA.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

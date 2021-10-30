@@ -3,4 +3,4 @@ project(BigArithmetic)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(BigArithmetic main.cpp BA.h BA.cpp)
+add_executable(BigArithmetic main.cpp)

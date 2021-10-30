@@ -84,12 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sergey/CLionProjects/BigArithmetic/BA.cpp">
-			<Option target="BigArithmetic"/>
-		</Unit>
-		<Unit filename="/home/sergey/CLionProjects/BigArithmetic/BA.h">
-			<Option target="BigArithmetic"/>
-		</Unit>
 		<Unit filename="/home/sergey/CLionProjects/BigArithmetic/main.cpp">
 			<Option target="BigArithmetic"/>
 		</Unit>

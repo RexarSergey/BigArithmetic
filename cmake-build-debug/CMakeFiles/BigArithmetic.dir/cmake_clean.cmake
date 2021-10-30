@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "BigArithmetic"
   "BigArithmetic.pdb"
-  "CMakeFiles/BigArithmetic.dir/BA.cpp.o"
   "CMakeFiles/BigArithmetic.dir/main.cpp.o"
 )
 
