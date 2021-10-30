@@ -31,7 +31,8 @@ public:
 
     big_int operator+(const big_int &that);
     big_int operator-(const big_int &that);
-
+    big_int operator*(const big_int &that);
+    big_int operator/(const big_int &that);
 
     std::string toString();
 

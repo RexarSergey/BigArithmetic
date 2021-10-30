@@ -187,6 +187,37 @@ big_int big_int::operator-(const big_int &that) {
     return result;
 }
 
+big_int big_int::operator*(const big_int &that) {
+    big_int result;
+    result.is_negative_ = this->is_negative_ != that.is_negative_;
+
+    std::vector<int8_t> mult(this->number_.size() + that.number_.size());
+
+    for (size_t i = 0; i < this->number_.size(); ++i) {
+        for (size_t j = 0; j < that.number_.size(); ++j) {
+            mult[i + j] += this->number_[i] * that.number_[j];
+            mult[i + j + 1] += (mult[i + j] / 10);
+            mult[i + j] %= 10;
+        }
+    }
+
+    result.number_ = mult;
+    result.delete_first_zeros();
+
+    return result;
+}
+
+void level_up(){
+
+}
+
+big_int big_int::operator/(const big_int &that) {
+    big_int result;
+
+    return result;
+}
+
+
 std::string big_int::toString() {
     std::string str = "";
     for (const int8_t &elem: number_)
@@ -196,5 +227,4 @@ std::string big_int::toString() {
 
     return str;
 }
-
 

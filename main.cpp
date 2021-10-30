@@ -11,23 +11,29 @@ void sum(big_int& a, big_int& b){
 void dif(big_int& a, big_int& b){
     std::cout <<  (a-b).toString();
 }
+void mul(big_int& a, big_int& b){
+    std::cout <<  (a*b).toString();
+}
 
 int main() {
     std::map<std::string, void_func> map;
     map["+"] = (void_func) &sum;
     map["-"] = (void_func) &dif;
+    map["*"] = (void_func) &mul;
 
 
-    std::string a_str, operation, b_str;
-    std::cin >> a_str;
-    big_int a(a_str);
+    ((void(*)(big_int, big_int)) map["*"])(big_int("99999"), big_int("9999"));
 
-    std::cin >> operation;
-
-    std::cin >> b_str;
-    big_int b(b_str);
-
-    ((void(*)(big_int, big_int)) map[operation])(a, b);
+//    std::string a_str, operation, b_str;
+//    std::cin >> a_str;
+//    big_int a(a_str);
+//
+//    std::cin >> operation;
+//
+//    std::cin >> b_str;
+//    big_int b(b_str);
+//
+//    ((void(*)(big_int, big_int)) map[operation])(a, b);
 
     return 0;
 }
