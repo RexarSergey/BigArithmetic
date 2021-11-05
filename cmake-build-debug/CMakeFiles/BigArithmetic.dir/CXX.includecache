@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/sergey/CLionProjects/BigArithmetic/BA.cpp
-BA.h
-/home/sergey/CLionProjects/BigArithmetic/BA.h
+/home/sergey/CLionProjects/BigArithmetic/big_int.cpp
+cstring
+-
+big_int.h
+/home/sergey/CLionProjects/BigArithmetic/big_int.h
 
-/home/sergey/CLionProjects/BigArithmetic/BA.h
+/home/sergey/CLionProjects/BigArithmetic/big_int.h
 iostream
 -
-vector
+string
 -
 

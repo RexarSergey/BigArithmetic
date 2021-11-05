@@ -1,4 +1,4 @@
-The system is: Linux - 5.11.0-37-generic - x86_64
+The system is: Linux - 5.11.0-38-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -28,10 +28,10 @@ The CXX compiler identification is Clang, found in "/home/sergey/CLionProjects/B
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_d7eb2/fast && /usr/bin/make  -f CMakeFiles/cmTC_d7eb2.dir/build.make CMakeFiles/cmTC_d7eb2.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ee9a8/fast && /usr/bin/make  -f CMakeFiles/cmTC_ee9a8.dir/build.make CMakeFiles/cmTC_ee9a8.dir/build
 make[1]: Entering directory '/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o -c /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCCompilerABI.c
+Building C object CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o -c /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa
@@ -41,8 +41,8 @@ Configured with: ../src/configure -v --with-pkgversion='Ubuntu 10.3.0-1ubuntu1~2
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1~20.04) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc9As8xy.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccQUFKp9.s
 GNU C17 (Ubuntu 10.3.0-1ubuntu1~20.04) version 10.3.0 (x86_64-linux-gnu)
 	compiled by GNU C version 10.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
 
@@ -62,15 +62,15 @@ GNU C17 (Ubuntu 10.3.0-1ubuntu1~20.04) version 10.3.0 (x86_64-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: f2dc2f7bd2244142e4cf7a4d43b693bf
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o /tmp/cc9As8xy.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o /tmp/ccQUFKp9.s
 GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_d7eb2
-/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7eb2.dir/link.txt --verbose=1
-/usr/bin/cc  -v CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o -o cmTC_d7eb2 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_ee9a8
+/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee9a8.dir/link.txt --verbose=1
+/usr/bin/cc  -v CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o -o cmTC_ee9a8 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper
@@ -83,9 +83,9 @@ Supported LTO compression algorithms: zlib zstd
 gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1~20.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d7eb2' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNWAtwZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d7eb2 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d7eb2' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ee9a8' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEEvziE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ee9a8 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ee9a8' '-mtune=generic' '-march=x86-64'
 make[1]: Leaving directory '/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -109,10 +109,10 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_d7eb2/fast && /usr/bin/make  -f CMakeFiles/cmTC_d7eb2.dir/build.make CMakeFiles/cmTC_d7eb2.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_ee9a8/fast && /usr/bin/make  -f CMakeFiles/cmTC_ee9a8.dir/build.make CMakeFiles/cmTC_ee9a8.dir/build]
   ignore line: [make[1]: Entering directory '/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o -c /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCCompilerABI.c]
+  ignore line: [Building C object CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o -c /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa:hsa]
@@ -122,8 +122,8 @@ Parsed C implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
   ignore line: [gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1~20.04) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc9As8xy.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccQUFKp9.s]
   ignore line: [GNU C17 (Ubuntu 10.3.0-1ubuntu1~20.04) version 10.3.0 (x86_64-linux-gnu)]
   ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
   ignore line: []
@@ -143,15 +143,15 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: f2dc2f7bd2244142e4cf7a4d43b693bf]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o /tmp/cc9As8xy.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o /tmp/ccQUFKp9.s]
   ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_d7eb2]
-  ignore line: [/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7eb2.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o -o cmTC_d7eb2 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_ee9a8]
+  ignore line: [/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee9a8.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o -o cmTC_ee9a8 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper]
@@ -164,13 +164,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 10.3.0 (Ubuntu 10.3.0-1ubuntu1~20.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/10/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/10/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d7eb2' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNWAtwZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d7eb2 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ee9a8' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/10/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEEvziE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_ee9a8 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/10/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/10/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccNWAtwZ.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccEEvziE.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -188,7 +188,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_d7eb2] ==> ignore
+    arg [cmTC_ee9a8] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/Scrt1.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/10/crtbeginS.o]
@@ -200,7 +200,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..]
-    arg [CMakeFiles/cmTC_d7eb2.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_ee9a8.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -234,10 +234,10 @@ Parsed C implicit link information from above output:
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_74596/fast && /usr/bin/make  -f CMakeFiles/cmTC_74596.dir/build.make CMakeFiles/cmTC_74596.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_54aa0/fast && /usr/bin/make  -f CMakeFiles/cmTC_54aa0.dir/build.make CMakeFiles/cmTC_54aa0.dir/build
 make[1]: Entering directory '/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o
-/bin/clang++-12   -v -MD -MT CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o -c /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp
+Building CXX object CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o
+/bin/clang++-12   -v -MD -MT CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o -c /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp
 Ubuntu clang version 12.0.0-3ubuntu1~20.04.4
 Target: x86_64-pc-linux-gnu
 Thread model: posix
@@ -250,7 +250,7 @@ Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/10
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
  (in-process)
- "/usr/lib/llvm-12/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-12/lib/clang/12.0.0 -dependency-file CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp
+ "/usr/lib/llvm-12/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-12/lib/clang/12.0.0 -dependency-file CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp
 clang -cc1 version 12.0.0 based upon LLVM 12.0.0 default target x86_64-pc-linux-gnu
 ignoring nonexistent directory "/include"
 ignoring duplicate directory "/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10"
@@ -264,9 +264,9 @@ ignoring duplicate directory "/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../in
  /usr/include/x86_64-linux-gnu
  /usr/include
 End of search list.
-Linking CXX executable cmTC_74596
-/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74596.dir/link.txt --verbose=1
-/bin/clang++-12  -v CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_74596 
+Linking CXX executable cmTC_54aa0
+/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54aa0.dir/link.txt --verbose=1
+/bin/clang++-12  -v CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_54aa0 
 Ubuntu clang version 12.0.0-3ubuntu1~20.04.4
 Target: x86_64-pc-linux-gnu
 Thread model: posix
@@ -278,7 +278,7 @@ Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/9
 Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/10
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- "/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_74596 /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/bin/../lib/gcc/x86_64-linux-gnu/10 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-12/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
+ "/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_54aa0 /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/bin/../lib/gcc/x86_64-linux-gnu/10 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-12/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory '/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -308,10 +308,10 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_74596/fast && /usr/bin/make  -f CMakeFiles/cmTC_74596.dir/build.make CMakeFiles/cmTC_74596.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_54aa0/fast && /usr/bin/make  -f CMakeFiles/cmTC_54aa0.dir/build.make CMakeFiles/cmTC_54aa0.dir/build]
   ignore line: [make[1]: Entering directory '/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/bin/clang++-12   -v -MD -MT CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o -c /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Building CXX object CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/bin/clang++-12   -v -MD -MT CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o -c /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Ubuntu clang version 12.0.0-3ubuntu1~20.04.4]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Thread model: posix]
@@ -326,7 +326,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
   ignore line: [ (in-process)]
-  ignore line: [ "/usr/lib/llvm-12/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-12/lib/clang/12.0.0 -dependency-file CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [ "/usr/lib/llvm-12/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-12/lib/clang/12.0.0 -dependency-file CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [clang -cc1 version 12.0.0 based upon LLVM 12.0.0 default target x86_64-pc-linux-gnu]
   ignore line: [ignoring nonexistent directory "/include"]
   ignore line: [ignoring duplicate directory "/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10"]
@@ -340,9 +340,9 @@ Parsed CXX implicit link information from above output:
   ignore line: [ /usr/include/x86_64-linux-gnu]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [Linking CXX executable cmTC_74596]
-  ignore line: [/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74596.dir/link.txt --verbose=1]
-  ignore line: [/bin/clang++-12  -v CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_74596 ]
+  ignore line: [Linking CXX executable cmTC_54aa0]
+  ignore line: [/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54aa0.dir/link.txt --verbose=1]
+  ignore line: [/bin/clang++-12  -v CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_54aa0 ]
   ignore line: [Ubuntu clang version 12.0.0-3ubuntu1~20.04.4]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Thread model: posix]
@@ -356,7 +356,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_74596 /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/bin/../lib/gcc/x86_64-linux-gnu/10 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-12/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+  link line: [ "/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_54aa0 /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/bin/../lib/gcc/x86_64-linux-gnu/10 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-12/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
     arg [/bin/ld] ==> ignore
     arg [-zrelro] ==> ignore
     arg [--hash-style=gnu] ==> ignore
@@ -367,7 +367,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_74596] ==> ignore
+    arg [cmTC_54aa0] ==> ignore
     arg [/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o]
     arg [/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o]
     arg [/bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o] ==> obj [/bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o]
@@ -383,7 +383,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/llvm-12/bin/../lib] ==> dir [/usr/lib/llvm-12/bin/../lib]
     arg [-L/lib] ==> dir [/lib]
     arg [-L/usr/lib] ==> dir [/usr/lib]
-    arg [CMakeFiles/cmTC_74596.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_54aa0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -414,33 +414,5 @@ Parsed CXX implicit link information from above output:
   implicit objs: [/lib/x86_64-linux-gnu/crt1.o;/lib/x86_64-linux-gnu/crti.o;/lib/gcc/x86_64-linux-gnu/10/crtbegin.o;/lib/gcc/x86_64-linux-gnu/10/crtend.o;/lib/x86_64-linux-gnu/crtn.o]
   implicit dirs: [/lib/gcc/x86_64-linux-gnu/10;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/lib;/usr/lib/llvm-12/lib;/usr/lib]
   implicit fwks: []
-
-
-Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_dbf34/fast && /usr/bin/make  -f CMakeFiles/cmTC_dbf34.dir/build.make CMakeFiles/cmTC_dbf34.dir/build
-make[1]: вход в каталог «/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_dbf34.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_dbf34.dir/CheckIncludeFile.c.o -c /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_dbf34
-/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbf34.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_dbf34.dir/CheckIncludeFile.c.o -o cmTC_dbf34 
-make[1]: выход из каталога «/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp»
-
-
-
-Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_1b812/fast && /usr/bin/make  -f CMakeFiles/cmTC_1b812.dir/build.make CMakeFiles/cmTC_1b812.dir/build
-make[1]: вход в каталог «/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_1b812.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_1b812.dir/CheckFunctionExists.c.o -c /home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/share/cmake-3.20/Modules/CheckFunctionExists.c
-Linking C executable cmTC_1b812
-/home/sergey/Загрузки/clion-2021.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b812.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_1b812.dir/CheckFunctionExists.c.o -o cmTC_1b812  -lpthread 
-make[1]: выход из каталога «/home/sergey/CLionProjects/BigArithmetic/cmake-build-debug/CMakeFiles/CMakeTmp»
-
 
 
